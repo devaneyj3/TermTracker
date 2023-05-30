@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="StudentTernTracker.Views.EditCourse"
+    Title="Edit/Delete Course">
+        <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name = "UpdateCourse" Text="Save" Clicked="EditCourse_Clicked"/>
+        <ToolbarItem x:Name="Cancel" Text="Cancel" Clicked="Cancel_Clicked"/>
+      
+    </ContentPage.ToolbarItems>
+   <ContentPage.Content>
+
+        <StackLayout>
+            <Grid Padding="5" RowSpacing="1" ColumnSpacing="1" BackgroundColor="WhiteSmoke">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">CouseID</Label>
+                <Entry Text="{Binding CourseID}" x:Name="CourseID"
+                       Placeholder="Course ID" Grid.Row="0" Grid.Column="1"
+                       VerticalTextAlignment="Center" IsReadOnly="True"/>
+
+                <Label Grid.Row="1" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Name</Label>
+                <Entry Text="{Binding Name}" x:Name="CourseName"
+                       Placeholder="Enter Course Name" Grid.Row="1" Grid.Column="1"
+                       VerticalTextAlignment="Center"/>
+
+                <Label Grid.Row="2" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Instructor Name</Label>
+                <Entry Text="{Binding InstructorName}" x:Name="InstructorName"
+                       Placeholder="Enter Instructor Name" Grid.Row="2" Grid.Column="1"
+                       VerticalTextAlignment="Center"/>
+
+                <Label Grid.Row="3" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Instructor Email</Label>
+                <Entry Text="{Binding InstructorEmail}" x:Name="InstructorEmail"
+                       Placeholder="Enter Instructor Email" Grid.Row="3" Grid.Column="1"
+                       VerticalTextAlignment="Center"/>
+
+                 <Label Grid.Row="4" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Instructor Phone</Label>
+                <Entry Text="{Binding InstructorPhone}" x:Name="InstructorPhone"
+                       Placeholder="Enter Instructor Phone" Grid.Row="4" Grid.Column="1"
+                       VerticalTextAlignment="Center"/>
+
+                 <Label Grid.Row="5" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Notes</Label>
+                <Entry Text="{Binding Notes}" x:Name="Notes"
+                       Placeholder="Enter Notes" Grid.Row="5" Grid.Column="1"
+                       VerticalTextAlignment="Center"/>
+
+                <Label Grid.Row="6" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Status</Label>
+
+                <Picker Grid.Row="6" Grid.Column="1" x:Name="StatusPicker"/>
+
+
+                 <Label Grid.Row="7" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Term</Label>
+
+                <Picker Grid.Row="7" Grid.Column="1" FontSize="Medium" x:Name="TermPicker"
+                        TitleColor="Teal">
+                </Picker>
+              
+
+                <Label Grid.Row="8" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Start Date</Label>
+
+                <DatePicker Grid.Row="8" Grid.Column="1" x:Name="start"/>
+
+
+                <Label Grid.Row="9" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">End Date</Label>
+
+                <DatePicker Grid.Row="9" Grid.Column="1" x:Name="end"/>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

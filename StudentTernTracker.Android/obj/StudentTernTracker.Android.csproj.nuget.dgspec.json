@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
+        "projectName": "StudentTernTracker.Android",
+        "projectPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
+        "packagesPath": "/Users/jordandevaney/.nuget/packages/",
+        "outputPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/jordandevaney/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj": {
+                "projectPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xam.Plugins.Notifier": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1142, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj",
+        "projectName": "StudentTernTracker",
+        "projectPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj",
+        "packagesPath": "/Users/jordandevaney/.nuget/packages/",
+        "outputPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jordandevaney/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xam.Plugins.Notifier": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1142, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

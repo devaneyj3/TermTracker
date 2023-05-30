@@ -1,0 +1,35 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{7CEEEE88-8EAB-438E-80C1-2618F0150FF6}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StudentTernTracker" expanded="True">
+            <Node name="StudentTernTracker" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="AddAssesment.xaml" expanded="True" />
+                <Node name="AddTerm.xaml" expanded="True" />
+                <Node name="CourseList.xaml" expanded="True">
+                  <Node name="CourseList.xaml.cs" selected="True" />
+                </Node>
+                <Node name="EditAssesment.xaml" expanded="True" />
+                <Node name="EditCourses.xaml" expanded="True" />
+                <Node name="EditTerm.xaml" expanded="True" />
+              </Node>
+              <Node name="TermDetail.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_28" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.StudentTernTracker.Android PreferredExecutionTarget="Android.pixel_5_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/jordandevaney/Desktop/TermTracker-main 3/.gitignore" relfile=".gitignore" line="166" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

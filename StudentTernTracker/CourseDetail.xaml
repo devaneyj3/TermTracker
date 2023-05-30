@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="StudentTernTracker.CourseDetail"
+    Title="Course Details">
+    <ContentPage.Content>
+        <StackLayout>
+             <Grid Padding="15" RowSpacing="3" ColumnSpacing="2" BackgroundColor="WhiteSmoke" x:Name="GridView">
+                <Grid.RowDefinitions>
+                
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+           <Label Grid.Row="0"
+                  Grid.Column="0"
+                  Text="Course Name: "
+                  />
+                 <Label Grid.Row="0"
+                        Grid.Column="1"
+                        Text="{Binding Name}"/>
+           <Label Grid.Row="1"
+                  Grid.Column="0"
+                  Text="Instructor Name: "
+                  />
+                 <Label Grid.Row="1"
+                        Grid.Column="1"
+                        Text="{Binding InstructorName}"/>
+            <Label Grid.Row="2"
+                   Grid.Column="0"
+                   Text="Instructor Email: "
+                   />
+                 <Label Grid.Row="2"
+                        Grid.Column="1"
+                        Text="{Binding InstructorEmail}"/>
+            <Label Grid.Row="3"
+                   Grid.Column="0"
+                   Text="Instructor Phone: "
+                   />
+                 <Label Grid.Row="3"
+                        Grid.Column="1"
+                        Text="{Binding InstructorPhone}"/>
+            <Label Grid.Row="4"
+                   Grid.Column="0"
+                   Text="Start: "
+                   />
+                 <Label Grid.Row="4"
+                        Grid.Column="1"
+                        Text="{Binding StartDate, StringFormat='{0:M/dd/yy}'}"/>
+            <Label Grid.Row="5"
+                   Grid.Column="0"
+                   Text="End: "
+                   />
+                 <Label Grid.Row="5"
+                        Grid.Column="1"
+                        Text="{Binding EndDate, StringFormat='{0:M/dd/yy}'}"/>
+            <Label Grid.Row="6"
+                   Grid.Column="0"
+                   Text="Notes: "
+                   />
+                 <Label Grid.Row="6"
+                        Grid.Column="1"
+                        Text="{Binding Notes}"
+                        x:Name= "NotesLabel"/>
+            <Label Grid.Row="7"
+                   Grid.Column="0"
+                   Text="Status: "
+                   />
+                 <Label Grid.Row="7"
+                        Grid.Column="1"
+                        Text="{Binding Status}"/>
+            <Label Grid.Row="8"
+                   Grid.Column="0"
+                   Text="Term: "
+                   />
+                 <Button Grid.Row="9"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Text="Share Notes"
+                   x:Name="ShareBtn"
+                   Clicked="Button_Clicked"
+                   />
+                 </Grid>
+           <StackLayout>
+      <ListView x:Name="AssessmentListView" HasUnevenRows="True" ItemSelected="AssessmentListView_ItemSelected" HorizontalOptions="CenterAndExpand"
+                  >
+          
+          <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation ="Horizontal" Padding="10">
+                        <Label Text="{Binding Name}"            x:Name="AssessmentName"
+                       VerticalTextAlignment="Center"/>
+                            <StackLayout Orientation ="Horizontal" HorizontalOptions="EndAndExpand" Padding="10">
+                        <Label Text="{Binding Start, StringFormat='{0:M/dd/yy}'}"            x:Name="StartDate"
+                       VerticalTextAlignment="Center"/>
+                                <Label Text="{Binding End, StringFormat='{0: - M/dd/yy}'}"            x:Name="EndDate"/>
+
+                        </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+        <Button x:Name="EditCourse" Text="Edit Course" Clicked="EditCourse_OnClicked"/>
+        <Button x:Name="AddAssesment" Text="Add Assesment" Clicked="AddAssesment_OnClicked"/>
+        <Button x:Name="DeleteCourse" Text="Delete Course" Clicked="DeleteCourse_Clicked"/>
+
+         </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

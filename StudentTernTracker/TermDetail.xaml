@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="StudentTernTracker.TermDetail">
+        <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="AddCourse" Text="Add Course" Clicked="AddCourse_Clicked"/>
+        </ContentPage.ToolbarItems>
+            <NavigationPage.TitleView>
+        
+        <Label Text="Term Details" FontSize="Medium"></Label>
+  
+        </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="5" RowSpacing="1" ColumnSpacing="1" BackgroundColor="WhiteSmoke" HorizontalOptions="EndAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" x:Name="TermTitle" FontSize="Medium"/>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="TermDate" FontSize="Medium"/>
+
+
+            </Grid>
+                  <ListView x:Name="CourseListView" HasUnevenRows="True" HorizontalOptions="EndAndExpand"
+                  ItemSelected="CourseListView_ItemSelected">
+          
+          <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation ="Horizontal" Padding="10">
+                        <Label Text="{Binding Name}"            x:Name="CourseName"
+                       VerticalTextAlignment="Center"/>
+                            <StackLayout Orientation ="Horizontal" HorizontalOptions="EndAndExpand" Padding="10">
+                        <Label Text="{Binding StartDate, StringFormat='{0:M/dd/yy}'}"            x:Name="StartDate"
+                       VerticalTextAlignment="Center"/>
+                                <Label Text="{Binding EndDate, StringFormat='{0: - M/dd/yy}'}"            x:Name="EndDate"/>
+
+                        </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+        <Button x:Name="EditTerm" Text="Edit Term" Clicked="EditTerm_Clicked"/>
+        <Button x:Name="DeleteTerm" Text="Delete Term" Clicked="DeleteTerm_Clicked"/>
+
+         </StackLayout>
+        
+    </ContentPage.Content>
+        
+</ContentPage>
