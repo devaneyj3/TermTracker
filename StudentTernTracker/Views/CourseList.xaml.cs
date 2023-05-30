@@ -37,9 +37,9 @@ namespace StudentTernTracker.Views
 
             foreach (Course course in courses)
             {
-                if (course.StartDate == DateTime.Today)
+                if (course.StartDate == DateTime.Today && course.Notification == true && !Course.Notified)
                 {
-                
+                    Course.Notified = true;
                     CrossLocalNotifications.Current.Show("Notice", $"{course.Name} begins today and ends on {course.EndDate}", courseNotificationID);
                 }
             }
@@ -68,9 +68,9 @@ namespace StudentTernTracker.Views
 
             foreach (Assesment assessment in assessments)
             {
-                if (assessment.Start == DateTime.Today)
+                if (assessment.Start == DateTime.Today && assessment.Notification == true && !Assesment.Notified)
                 {
-
+                    Assesment.Notified = true;
                     CrossLocalNotifications.Current.Show("Notice", $"{assessment.Name} begins today and ends on {assessment.End}", assessmentNotificationID);
                 }
             }

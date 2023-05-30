@@ -6,7 +6,7 @@ namespace StudentTernTracker.Models
 {
     public class Assesment
     {
-        public static bool AssessmentNotification = false;
+        public static bool Notified = false;
         public static List<string> typesList = new List<string>{ "PA", "OA" };
         public static int CourseAssementLength = 0;
         public static int SelectedAssessmentID = 0;
