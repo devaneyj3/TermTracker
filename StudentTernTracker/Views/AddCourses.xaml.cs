@@ -51,6 +51,7 @@ namespace StudentTernTracker.Views
             string instructorPhone = InstructorPhone.Text;
             string notes = Notes.Text;
             string status = StatusPicker.SelectedItem.ToString();
+            bool notification = Notification.IsToggled;
 
             //check if values are entered
             if(string.IsNullOrWhiteSpace(Name))
@@ -80,7 +81,7 @@ namespace StudentTernTracker.Views
                 return;
             }
 
-            await DatabaseService.AddCouse(Name, TermId, status, StartDate, EndDate, instructorName, instructorPhone, instructorEmail, notes);
+            await DatabaseService.AddCouse(Name, TermId, status, StartDate, EndDate, instructorName, instructorPhone, instructorEmail, notes, notification);
 
                 await Navigation.PopAsync();
         }

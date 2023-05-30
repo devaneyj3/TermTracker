@@ -18,7 +18,7 @@ namespace StudentTernTracker.Models
         public int CourseId { get; set; } //Foreign key for term table
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-        public static bool Notification { get; set; }
+        public bool Notification { get; set; }
         
     }
 }

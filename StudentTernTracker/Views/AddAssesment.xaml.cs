@@ -30,7 +30,8 @@ namespace StudentTernTracker.Views
                 await DisplayAlert("Error", "The End Date can't be before the Start Date", "OK");
                 return;
             }
-            await DatabaseService.AddAssesment(Name.Text, Type.SelectedItem.ToString(), Course.SelectedCourseId, StartDatePicker.Date, EndDatePicker.Date);
+            bool notification = Notification.IsToggled;
+            await DatabaseService.AddAssesment(Name.Text, Type.SelectedItem.ToString(), Course.SelectedCourseId, StartDatePicker.Date, EndDatePicker.Date, notification);
 
             await Navigation.PopAsync();
         }

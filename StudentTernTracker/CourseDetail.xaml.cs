@@ -46,7 +46,7 @@ namespace StudentTernTracker
 
 
             label.Text = Course.SelectedTermName;
-            GridView.Children.Add(label, 1, 8);
+            GridView.Children.Add(label, 1, 9);
 
             //get course assesments
             var assessments = await DatabaseService.GetAssessmentByCourse(Course.SelectedCourseId);

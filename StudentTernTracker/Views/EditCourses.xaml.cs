@@ -50,6 +50,7 @@ namespace StudentTernTracker.Views
                 start.Date = course.StartDate;
                 end.Date = course.EndDate;
                 Notes.Text = course.Notes;
+                Notification.IsToggled = course.Notification;
 
             }
         }
@@ -68,6 +69,7 @@ namespace StudentTernTracker.Views
             DateTime courseEndDate = end.Date;
             string courseNotes = Notes.Text;
             string status = StatusPicker.SelectedItem.ToString();
+            bool notification = Notification.IsToggled;
 
             //check if values are entered
             if (string.IsNullOrWhiteSpace(courseName))
@@ -97,7 +99,7 @@ namespace StudentTernTracker.Views
                 return;
             }
 
-            await DatabaseService.UpdateCourse(Course.SelectedCourseId, courseName, status, couseTermPicker, courseStartDate, courseEndDate, courseInstructorName, courseInstructorEmail, courseInstructorPhone, courseNotes);
+            await DatabaseService.UpdateCourse(Course.SelectedCourseId, courseName, status, couseTermPicker, courseStartDate, courseEndDate, courseInstructorName, courseInstructorEmail, courseInstructorPhone, courseNotes, notification);
 
             await DisplayAlert("Updated", "Course is updated", "OK");
             await Navigation.PopToRootAsync();

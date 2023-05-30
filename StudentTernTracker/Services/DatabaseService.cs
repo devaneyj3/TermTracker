@@ -14,7 +14,7 @@ namespace StudentTernTracker.Services
 
         #region Courses Methods
 
-        public static async Task AddCouse(string name, int termId, string status, DateTime start, DateTime end, string instructorName, string instructorEmail, string instructorPhone, string notes)
+        public static async Task AddCouse(string name, int termId, string status, DateTime start, DateTime end, string instructorName, string instructorEmail, string instructorPhone, string notes, bool notifications)
         {
             await Init();
 
@@ -28,7 +28,9 @@ namespace StudentTernTracker.Services
                 InstructorName = instructorName,
                 InstructorEmail = instructorEmail,
                 InstructorPhone = instructorPhone,
-                Notes = notes
+                Notes = notes,
+                Notification = notifications
+                
             };
             await _db.InsertAsync(course);
             var id = course.Id;
@@ -69,7 +71,7 @@ namespace StudentTernTracker.Services
             return Courses;
         }
 
-        public static async Task UpdateCourse(int id, string name, string status, int termId, DateTime start, DateTime end, string instructorName, string instructorEmail, string instructorPhone, string notes)
+        public static async Task UpdateCourse(int id, string name, string status, int termId, DateTime start, DateTime end, string instructorName, string instructorEmail, string instructorPhone, string notes, bool notifications)
         {
             await Init();
 
@@ -87,6 +89,7 @@ namespace StudentTernTracker.Services
                 courseQuery.InstructorEmail = instructorEmail;
                 courseQuery.InstructorPhone = instructorPhone;
                 courseQuery.Notes = notes;
+                courseQuery.Notification = notifications;
              
                 await _db.UpdateAsync(courseQuery);
             }
@@ -173,7 +176,7 @@ namespace StudentTernTracker.Services
 
         #region Assesment Methods
 
-        public static async Task AddAssesment(string name, string type, int courseID, DateTime Start, DateTime End)
+        public static async Task AddAssesment(string name, string type, int courseID, DateTime Start, DateTime End, bool notifications)
         {
             await Init();
 
@@ -183,7 +186,8 @@ namespace StudentTernTracker.Services
                 CourseId = courseID,
                 Start = Start,
                 End = End,
-                Type = type
+                Type = type,
+                Notification = notifications
             };
             await _db.InsertAsync(assesment);
             var id = assesment.Id;
@@ -224,7 +228,7 @@ namespace StudentTernTracker.Services
             return assesments;
         }
 
-        public static async Task UpdateAssessment(int assesmentID, string name, string type, DateTime Start, DateTime End)
+        public static async Task UpdateAssessment(int assesmentID, string name, string type, DateTime Start, DateTime End, bool notifications)
         {
             await Init();
 
@@ -237,6 +241,7 @@ namespace StudentTernTracker.Services
                 courseQuery.Type = type;
                 courseQuery.Start = Start;
                 courseQuery.End = End;
+                courseQuery.Notification = notifications;
 
                 await _db.UpdateAsync(courseQuery);
             }
@@ -270,6 +275,7 @@ namespace StudentTernTracker.Services
                 InstructorEmail = "Jefferson",
                 InstructorPhone = "333-333-3333",
                 Notes = "make wireframes",
+                Notification = true
             };
             await _db.InsertAsync(course);
 
@@ -281,6 +287,7 @@ namespace StudentTernTracker.Services
                 Start = DateTime.Now,
                 Type = "OA",
                 End = DateTime.Now,
+                Notification = true
             };
 
             await _db.InsertAsync(OA);
@@ -294,6 +301,7 @@ namespace StudentTernTracker.Services
                 Start = DateTime.Now,
                 Type = "PA",
                 End = DateTime.Now,
+                Notification = true
             };
 
             await _db.InsertAsync(PA);

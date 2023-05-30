@@ -21,6 +21,6 @@ namespace StudentTernTracker.Models
         public string InstructorPhone { get; set; }
         public string Notes { get; set; }
         public string Status { get; set; }
-        public static bool Notification { get; set; }
+        public bool Notification { get; set; }
     }
 }

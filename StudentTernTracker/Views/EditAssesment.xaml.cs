@@ -34,6 +34,7 @@ namespace StudentTernTracker.Views
                 TypePicker.SelectedItem = assessment.Type;
                 StartDatePicker.Date = assessment.Start;
                 EndDatePicker.Date = assessment.End;
+                Notification.IsToggled = assessment.Notification;
             }
         }
         async void Cancel_Clicked(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace StudentTernTracker.Views
             string assesmentType = TypePicker.SelectedItem.ToString();
             DateTime assessmentStartDate = StartDatePicker.Date;
             DateTime assessmentEndDate = EndDatePicker.Date;
+            bool notification = Notification.IsToggled;
 
             //check if values are entered
             if (string.IsNullOrWhiteSpace(assessmentName))
@@ -61,7 +63,7 @@ namespace StudentTernTracker.Views
                 await DisplayAlert("Error", "The End Date can't be before the Start Date", "OK");
                 return;
             }
-            await DatabaseService.UpdateAssessment(Assesment.SelectedAssessmentID, assessmentName, assesmentType, assessmentStartDate, assessmentEndDate);
+            await DatabaseService.UpdateAssessment(Assesment.SelectedAssessmentID, assessmentName, assesmentType, assessmentStartDate, assessmentEndDate, notification);
 
             await DisplayAlert("Updated", "Assessment is updated", "OK");
             await Navigation.PopToRootAsync();

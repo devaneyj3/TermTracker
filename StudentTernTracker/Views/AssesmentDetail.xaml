@@ -47,6 +47,14 @@
                  <Label Grid.Row="3"
                         Grid.Column="1"
                         Text="{Binding End, StringFormat='{0:M/dd/yy}'}"/>
+
+                 <Label Grid.Row="4"
+                   Grid.Column="0"
+                   Text="Notification: "
+                   />
+                 <Label Grid.Row="4"
+                        Grid.Column="1"
+                        Text="{Binding Notification}"/>
            
                  </Grid>
    
