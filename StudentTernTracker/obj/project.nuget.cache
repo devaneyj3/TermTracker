@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7PhNMBOjj6ytAC5xwp1DfvyP/4SqP86bzBxASzTP0hTqxFVcyigJk8ZSse0jMq469CSuEs8nSyX45kD7ONWH1w==",
+  "dgSpecHash": "BgEuPSXYg6UXNJL2eb3UtsPVFQen6zPeQWM9q3tAGJfSKSkL2iBPkfKCLcHLbFc6trqgVRyxhz6lJkIDHJC1OA==",
   "success": true,
-  "projectFilePath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj",
+  "projectFilePath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj",
   "expectedPackageFiles": [
     "/Users/jordandevaney/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/jordandevaney/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",

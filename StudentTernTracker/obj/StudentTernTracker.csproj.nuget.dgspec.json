@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj": {}
+    "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj": {}
   },
   "projects": {
-    "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj": {
+    "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj",
+        "projectUniqueName": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj",
         "projectName": "StudentTernTracker",
-        "projectPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj",
+        "projectPath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj",
         "packagesPath": "/Users/jordandevaney/.nuget/packages/",
-        "outputPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/obj/",
+        "outputPath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jordandevaney/.config/NuGet/NuGet.Config"

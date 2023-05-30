@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IIJRlHvZyUfEVTqN5V4heZGs9L956zw7knmSDGtNYXp3+6pqYWvEdeXkLYLtSMQFgJlFwcvuFyc4BeWx07ihdQ==",
+  "dgSpecHash": "TN5wese2BGQrPHOfDF8+JdaQbqHE1mtPulXaunQLnSvE0udqWPBYj1k0Rh1uJMBhX1mwWDoHa2ZHyvgNuUoWMA==",
   "success": true,
-  "projectFilePath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
+  "projectFilePath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
   "expectedPackageFiles": [
     "/Users/jordandevaney/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
     "/Users/jordandevaney/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",

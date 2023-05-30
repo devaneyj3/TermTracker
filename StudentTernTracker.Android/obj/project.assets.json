@@ -2223,11 +2223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
+      "projectUniqueName": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
       "projectName": "StudentTernTracker.Android",
-      "projectPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
+      "projectPath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker.Android/StudentTernTracker.Android.csproj",
       "packagesPath": "/Users/jordandevaney/.nuget/packages/",
-      "outputPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker.Android/obj/",
+      "outputPath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2242,8 +2242,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj": {
-              "projectPath": "/Users/jordandevaney/Desktop/TermTracker-main 3/StudentTernTracker/StudentTernTracker.csproj"
+            "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj": {
+              "projectPath": "/Users/jordandevaney/Desktop/TermTracker/StudentTernTracker/StudentTernTracker.csproj"
             }
           }
         }
