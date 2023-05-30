@@ -115,6 +115,8 @@
                         <StackLayout Orientation ="Horizontal" Padding="10">
                         <Label Text="{Binding Name}"            x:Name="AssessmentName"
                        VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Type}"            x:Name="AssessmentType"
+                       VerticalTextAlignment="Center"/>
                             <StackLayout Orientation ="Horizontal" HorizontalOptions="EndAndExpand" Padding="10">
                         <Label Text="{Binding Start, StringFormat='{0:M/dd/yy}'}"            x:Name="StartDate"
                        VerticalTextAlignment="Center"/>

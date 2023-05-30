@@ -34,6 +34,8 @@ namespace StudentTernTracker
                 ShareBtn.IsVisible = false;
                
             }
+
+
         }
 
 
@@ -52,6 +54,11 @@ namespace StudentTernTracker
             var assessments = await DatabaseService.GetAssessmentByCourse(Course.SelectedCourseId);
 
             AssessmentListView.ItemsSource = assessments;
+
+            if(Assesment.CourseAssementLength == 2)
+            {
+                AddAssesment.IsVisible = false;
+            }
 
         }
 
