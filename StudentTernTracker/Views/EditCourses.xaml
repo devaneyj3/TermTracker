@@ -24,6 +24,7 @@
                      <RowDefinition Height="Auto"/>
                      <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
@@ -91,6 +92,11 @@
                        VerticalTextAlignment="Center">End Date</Label>
 
                 <DatePicker Grid.Row="9" Grid.Column="1" x:Name="end"/>
+
+                <Label Grid.Row="10" Grid.Column="0" FontSize="Medium"
+                       VerticalTextAlignment="Center">Notification</Label>
+
+                <Switch Grid.Row="10" Grid.Column="1" x:Name="Notification"/>
 
 
             </Grid>

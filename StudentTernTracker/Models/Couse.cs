@@ -5,7 +5,7 @@ namespace StudentTernTracker.Models
 {
     public class Course
     {
-        public static bool Notified = false;
+        public static bool CourseNotification = false;
         public static List<string> CourseStatusList = new List<string> { "In Progress", "Completed", "Dropped", "Plan to Take" };
         public static int SelectedCourseId = 0;
         public static string SelectedCourseName = "";
@@ -21,5 +21,6 @@ namespace StudentTernTracker.Models
         public string InstructorPhone { get; set; }
         public string Notes { get; set; }
         public string Status { get; set; }
+        public static bool Notification { get; set; }
     }
 }

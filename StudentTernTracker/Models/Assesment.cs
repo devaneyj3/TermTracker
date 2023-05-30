@@ -6,7 +6,7 @@ namespace StudentTernTracker.Models
 {
     public class Assesment
     {
-        public static bool Notified = false;
+        public static bool AssessmentNotification = false;
         public static List<string> typesList = new List<string>{ "PA", "OA" };
         public static int CourseAssementLength = 0;
         public static int SelectedAssessmentID = 0;
@@ -18,6 +18,7 @@ namespace StudentTernTracker.Models
         public int CourseId { get; set; } //Foreign key for term table
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
+        public static bool Notification { get; set; }
         
     }
 }
