@@ -1,10 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{7CEEEE88-8EAB-438E-80C1-2618F0150FF6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StudentTernTracker/Models/Couse.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentTernTracker/Views/CourseList.xaml.cs">
     <Files>
-      <File FileName="StudentTernTracker/Views/CourseList.xaml.cs" Line="73" Column="31" />
-      <File FileName="StudentTernTracker/Models/Assesment.cs" Line="9" Column="36" />
-      <File FileName="StudentTernTracker/Models/Term.cs" Line="1" Column="1" />
-      <File FileName="StudentTernTracker/Models/Couse.cs" Line="1" Column="1" />
+      <File FileName="StudentTernTracker/Views/CourseList.xaml.cs" Line="40" Column="106" />
+      <File FileName="StudentTernTracker/Models/Assesment.cs" />
+      <File FileName="StudentTernTracker/Models/Term.cs" />
+      <File FileName="StudentTernTracker/Models/Couse.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,15 +12,15 @@
           <Node name="StudentTernTracker" expanded="True">
             <Node name="Solution Items" expanded="True" />
             <Node name="StudentTernTracker" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Couse.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddAssesment.xaml" expanded="True" />
                 <Node name="AddCourses.xaml" expanded="True" />
                 <Node name="AssesmentDetail.xaml" expanded="True" />
-                <Node name="CourseList.xaml" expanded="True" />
+                <Node name="CourseList.xaml" expanded="True">
+                  <Node name="CourseList.xaml.cs" selected="True" />
+                </Node>
                 <Node name="EditAssesment.xaml" expanded="True" />
                 <Node name="EditCourses.xaml" expanded="True" />
               </Node>
