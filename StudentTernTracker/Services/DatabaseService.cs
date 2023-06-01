@@ -297,7 +297,7 @@ namespace StudentTernTracker.Services
             {
                 Id = 2,
                 Name = "Project for UX Design",
-                CourseId = term.Id,
+                CourseId = course.Id,
                 Start = DateTime.Now,
                 Type = "PA",
                 End = DateTime.Now,
